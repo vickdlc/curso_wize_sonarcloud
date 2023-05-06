@@ -11,13 +11,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 import com.wizeline.maven.learningjava.enums.AccountType;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * DTO que representa la información de una cuenta de banco.
  * Created by jose.vazquez on 07/09/22
  */
-@Document("bankAccountCollection")
+@Entity
 public class BankAccountDTO {
 
     @Id

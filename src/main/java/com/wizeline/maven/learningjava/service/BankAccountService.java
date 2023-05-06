@@ -31,10 +31,4 @@ public interface BankAccountService {
      */
     BankAccountDTO getAccountDetails(String user, String lastUsage);
 
-    void deleteAccounts();
-
-    void updateAccounts(BankAccountDTO bankAccountDTO, String id);
-
-    List<BankAccountDTO> getAccountByUser(String user);
-
 }

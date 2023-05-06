@@ -28,5 +28,3 @@ alex, Thene21@
 alex, Thene22@
 alex, Thene23@
 alex, Thene24@
-user1@wizeline.com, pass1JON
-user1@wizeline.com, pass1JON

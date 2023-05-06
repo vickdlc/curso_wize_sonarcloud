@@ -10,6 +10,7 @@ import java.net.URI;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,8 +21,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
+import com.wizeline.maven.learningjava.LearningJavaApplication;
 import com.wizeline.maven.learningjava.model.ResponseDTO;
 import com.wizeline.maven.learningjava.model.UserDTO;
 import com.wizeline.maven.learningjava.service.UserService;
@@ -95,6 +102,7 @@ public class UserController {
 
         return new ResponseEntity<List<ResponseDTO>>(responseList, responseHeaders, HttpStatus.OK);
     }
+
 
     public static Map<String, String> splitQuery(URI uri) {
         Map<String, String> queryPairs = new LinkedHashMap<String, String>();

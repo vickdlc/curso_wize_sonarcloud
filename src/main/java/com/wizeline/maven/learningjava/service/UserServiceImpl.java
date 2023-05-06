@@ -5,7 +5,6 @@ package com.wizeline.maven.learningjava.service;
 
 import java.util.logging.Logger;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.wizeline.maven.learningjava.model.ErrorDTO;
@@ -23,7 +22,7 @@ import com.wizeline.maven.learningjava.utils.Utils;
 public class UserServiceImpl implements UserService {
 
 	private static final Logger LOGGER = Logger.getLogger(UserServiceImpl.class.getName());
-
+	
 	@Override
 	public ResponseDTO createUser(String user, String password) {
 		LOGGER.info("Inicia procesamiento en capa de negocio");
